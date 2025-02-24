@@ -25,7 +25,9 @@ public class player : MonoBehaviour
             inputvector.x = 1;
         };
          inputvector = inputvector.normalized;
+        Vector3 movedir = Vector3.zero;
         transform.position += (Vector3)inputvector;
+
         Debug.Log(inputvector);
 
     }
