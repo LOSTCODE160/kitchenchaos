@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class player : MonoBehaviour
+
 {
+    [SerializeField]
+    private float _movespeed = 7f;
     private void Update()
     { Vector2 inputvector = new Vector2(0,0);
         if (Input.GetKey(KeyCode.W)) 
@@ -25,10 +28,11 @@ public class player : MonoBehaviour
             inputvector.x = 1;
         };
          inputvector = inputvector.normalized;
-        Vector3 movedir = Vector3.zero;
-        transform.position += (Vector3)inputvector;
+        Vector3 movedir =  new Vector3(inputvector.x, 0f, inputvector.y);
 
-        Debug.Log(inputvector);
+        transform.position += movedir*_movespeed*Time.deltaTime;
+
+        Debug.Log(Time.deltaTime);
 
     }
 }
