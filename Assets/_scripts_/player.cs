@@ -28,4 +28,8 @@ public class player : MonoBehaviour
     {
         return iswalking;
     }
+
+    public static void main() 
+    {
+    }
 }
