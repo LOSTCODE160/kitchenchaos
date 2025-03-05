@@ -29,5 +29,5 @@ public class player : MonoBehaviour
         return iswalking;
     }
 
-    
+     
 }
