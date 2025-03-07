@@ -10,14 +10,12 @@ public class GameInput : MonoBehaviour
         PlayerInputAction = new PlayerInputAction();
         PlayerInputAction.player.Enable();
 
-
-
     }
 
     public Vector2 GetMovementVectorNormalized() 
 
     {
-       
+      
         Vector2 inputvector = new Vector2(0, 0);
         PlayerInputAction.player.move.ReadValue<Vector2>();
         inputvector = inputvector.normalized;
