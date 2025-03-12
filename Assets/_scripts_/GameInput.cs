@@ -23,7 +23,7 @@ public class GameInput : MonoBehaviour
     }
      private static void main()
     {
-
+        GameInput gameinput = new GameInput();  
     }
 
 }
