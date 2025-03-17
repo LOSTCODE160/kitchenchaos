@@ -21,9 +21,5 @@ public class GameInput : MonoBehaviour
         inputvector = inputvector.normalized;
         return inputvector;
     }
-     private static void main()
-    {
-        GameInput gameinput = new GameInput();  
-    }
-
+    
 }
